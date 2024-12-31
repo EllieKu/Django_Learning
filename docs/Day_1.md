@@ -2,19 +2,30 @@
 
 ## Install Django
 
-``` bash
-pip install Django
+創建虛擬環境後, 在虛擬環境內執行：
+
+```bash
+pip install django
+```
+
+檢查是否安裝成功：
+
+```bash
+import django
+
+print(django.get_version())
+# 5.1.4
 ```
 
 ## Init first project
 
-創建專案名叫 *mysite* 在資料夾 *day_1* 下
+創建專案名叫 *mysite* 在資料夾 *myproject* 下
 
 ```bash
-django-admin startproject mysite day_1
+django-admin startproject mysite myproject
 ```
 
-進入 day_1 資料夾, 啟動專案
+進入 myproject 資料夾, 啟動專案
 
 ```bash
 python manage.py runserver
