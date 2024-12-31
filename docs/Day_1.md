@@ -1,4 +1,4 @@
-# Django Learning
+# Django Learning day 1
 
 ## Install Django
 
