@@ -6,3 +6,4 @@ Learning Django
 
 [Day_1](docs/Day_1.md)
 [Day_2](docs/Day_2.md)
+[Day_3](docs/Day_3.md)
