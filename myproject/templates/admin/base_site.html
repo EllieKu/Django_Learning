@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block userlinks %}
+    <form action="{% url 'set_language' %}" method="post" style="display:inline; margin-right: 20px;">
+        {% csrf_token %}
+        <select name="language" onchange="this.form.submit()" style="background: #417690; color: white; border: 1px solid #fff; border-radius: 4px;">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% for lang_code, lang_name in LANGUAGES %}
+                <option value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
+                    {{ lang_name }}
+                </option>
+            {% endfor %}
+        </select>
+    </form>
+    {{ block.super }}
+{% endblock %}
