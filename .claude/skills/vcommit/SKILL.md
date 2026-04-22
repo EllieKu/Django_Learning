@@ -3,7 +3,7 @@ name: vcommit
 description: 自動分析 git diff，產生符合 conventional commits 格式的 commit message 並完成 commit
 ---
 
-# Auto Commit Skill
+# Vcommit Skill
 
 自動執行 `git add`、根據 diff 內容判斷 commit 類型，產生 conventional commit message 並提交。
 
@@ -48,7 +48,7 @@ git diff
 
 範例：
 ```
-feat: add vote deduplication in polls app
+feat: 新增投票功能
 ```
 
 ### Step 4：執行 commit
@@ -73,10 +73,11 @@ git commit -m "<generated message>"
 - **不自動 push**，除非使用者明確要求
 - 若 `.gitignore` 已排除上述檔案，`git add -A` 即安全
 - 遇到 pre-commit hook 失敗時，修正問題後重新 commit（不用 `--no-verify`）
+- 使用繁體中文
 
 ## 使用方式
 
-使用者說：`/auto-commit` 或「幫我 commit」、「自動 commit」
+使用者說：`/vcommit` 或「幫我 commit」、「自動 commit」
 
 Claude 應：
 1. 執行上述流程

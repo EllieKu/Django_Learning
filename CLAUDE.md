@@ -76,3 +76,7 @@ myproject/
 
 - App 層級靜態檔案放在 `polls/static/polls/`（CSS、圖片）
 - Template 使用 `{% load static %}` 引入
+
+## Skills
+
+專案有自訂 skill，位於 `.claude/skills/`：
