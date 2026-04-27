@@ -11,3 +11,16 @@ Learning Django
 - [Day_5](docs/Day_5.md)
 - [Day_6](docs/Day_6.md)
 - [Day_7](docs/Day_7.md)
+
+===
+
+## Locale
+
+Linux
+
+```bash
+sudo apt-get install gettext
+python manage.py makemessages -l en
+python manage.py makemessages -l zh
+python manage.py compilemessages
+```

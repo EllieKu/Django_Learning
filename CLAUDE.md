@@ -77,6 +77,25 @@ myproject/
 - App 層級靜態檔案放在 `polls/static/polls/`（CSS、圖片）
 - Template 使用 `{% load static %}` 引入
 
+### 翻譯管理（i18n）
+
+翻譯檔案位於 `myproject/locale/{zh,en}/LC_MESSAGES/`（`.po` 原始檔 + `.mo` 編譯檔）。
+
+```bash
+cd myproject
+
+# 擷取需翻譯的字串並更新 .po 檔（執行 run_locale.sh）
+bash run_locale.sh
+# 等同於：
+python manage.py makemessages -l zh
+python manage.py makemessages -l en
+python manage.py compilemessages
+```
+
+修改 `.po` 翻譯後，必須執行 `compilemessages` 產生 `.mo` 才會生效。
+
 ## Skills
 
 專案有自訂 skill，位於 `.claude/skills/`：
+
+- `vcommit`：自動執行 `git add`，依 diff 產生 conventional commit message 並提交

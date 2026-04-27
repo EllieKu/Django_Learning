@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
@@ -110,8 +111,12 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'zh-hant'
 
 LANGUAGES = [
-    ('zh-hant', _('Traditional Chinese')),
-    ('en', _('English')),
+    ('zh-hant', 'Traditional Chinese'),
+    ('en', 'English'),
+]
+# 指定 .po/.mo 翻譯檔案存放的目錄 (通常放在專案根目錄下的 locale 資料夾)
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
 ]
 
 TIME_ZONE = 'Asia/Taipei'
