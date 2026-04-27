@@ -46,6 +46,9 @@ myproject/
 │   ├── urls.py      # app_name="polls"，namespace 路由
 │   ├── admin.py     # QuestionAdmin with ChoiceInline（TabularInline）
 │   └── tests.py     # Django TestCase，helper: create_question(text, days)
+├── consumption/     # 消費記錄 App（僅 Admin 介面）
+│   ├── models.py    # Retailer、Category、Commodity、Transaction
+│   └── admin.py     # TransactionAdmin（list_display 含計算欄位 unit_price）
 └── templates/
     └── admin/base_site.html  # 覆寫 Admin header，加入語言切換 selector
 ```
@@ -63,8 +66,15 @@ myproject/
 
 ### 資料模型
 
+**polls app**
 - `Question`：`question_text`、`pub_date`；方法 `was_published_recently()` 判斷是否在 24 小時內發布
 - `Choice`：`choice_text`、`votes`（default=0）；透過 `ForeignKey` 關聯 `Question`（CASCADE 刪除）
+
+**consumption app**（純 Admin 管理，無自訂 URL）
+- `Retailer`：購買通路（name）
+- `Category`：商品分類（name）
+- `Commodity`：商品（name、spec、brand、FK → Category，PROTECT）
+- `Transaction`：消費記錄（FK → Commodity、Retailer，PROTECT）；`unit_price` 為 property（cost / quantity）
 
 ### 國際化
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24 16:06+0800\n"
+"POT-Creation-Date: 2026-04-27 17:03+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,84 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: consumption/admin.py:13 consumption/models.py:6 consumption/models.py:17
+#: consumption/models.py:28
+msgid "name"
+msgstr "name"
+
+#: consumption/admin.py:17 consumption/models.py:30
+msgid "brand"
+msgstr "brand"
+
+#: consumption/admin.py:21 consumption/models.py:29
+msgid "spec"
+msgstr "spec"
+
+#: consumption/admin.py:25
+msgid "unit price"
+msgstr "unit price"
+
+#: consumption/apps.py:8
+msgid "consumption"
+msgstr "consumption"
+
+#: consumption/models.py:12 consumption/models.py:44
+msgid "retailer"
+msgstr "retailer"
+
+#: consumption/models.py:13
+msgid "retailers"
+msgstr "retailers"
+
+#: consumption/models.py:23 consumption/models.py:31
+msgid "category"
+msgstr "category"
+
+#: consumption/models.py:24
+msgid "categories"
+msgstr "categories"
+
+#: consumption/models.py:37 consumption/models.py:41
+msgid "commodity"
+msgstr "commodity"
+
+#: consumption/models.py:38
+msgid "commodities"
+msgstr "commodities"
+
+#: consumption/models.py:42
+msgid "quantity"
+msgstr "quantity"
+
+#: consumption/models.py:43
+msgid "cost"
+msgstr "cost"
+
+#: consumption/models.py:45
+msgid "note"
+msgstr "note"
+
+#: consumption/models.py:46
+#, fuzzy
+#| msgid "pub_date"
+msgid "date"
+msgstr "date"
+
+#: consumption/models.py:58
+msgid "transaction"
+msgstr "transaction"
+
+#: consumption/models.py:59
+msgid "transactions"
+msgstr "transactions"
+
 #: polls/admin.py:16
 msgid "Date Information"
 msgstr "date information"
+
+#: polls/apps.py:8
+msgid "polls"
+msgstr "polls"
 
 #: polls/models.py:9
 msgid "question_text"

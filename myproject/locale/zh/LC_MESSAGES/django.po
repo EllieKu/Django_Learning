@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24 16:06+0800\n"
+"POT-Creation-Date: 2026-04-27 17:03+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: consumption/admin.py:13 consumption/models.py:6 consumption/models.py:17
+#: consumption/models.py:28
+msgid "name"
+msgstr "名稱"
+
+#: consumption/admin.py:17 consumption/models.py:30
+msgid "brand"
+msgstr "品牌"
+
+#: consumption/admin.py:21 consumption/models.py:29
+msgid "spec"
+msgstr "規格"
+
+#: consumption/admin.py:25
+msgid "unit price"
+msgstr "單價"
+
+#: consumption/apps.py:8
+msgid "consumption"
+msgstr "日常消費"
+
+#: consumption/models.py:12 consumption/models.py:44
+msgid "retailer"
+msgstr "零售商"
+
+#: consumption/models.py:13
+msgid "retailers"
+msgstr "零售商"
+
+#: consumption/models.py:23 consumption/models.py:31
+msgid "category"
+msgstr "分類"
+
+#: consumption/models.py:24
+msgid "categories"
+msgstr "分類"
+
+#: consumption/models.py:37 consumption/models.py:41
+msgid "commodity"
+msgstr "商品"
+
+#: consumption/models.py:38
+msgid "commodities"
+msgstr "商品"
+
+#: consumption/models.py:42
+msgid "quantity"
+msgstr "數量"
+
+#: consumption/models.py:43
+msgid "cost"
+msgstr "花費"
+
+#: consumption/models.py:45
+msgid "note"
+msgstr "備註"
+
+#: consumption/models.py:46
+msgid "date"
+msgstr "日期"
+
+#: consumption/models.py:58
+msgid "transaction"
+msgstr "交易"
+
+#: consumption/models.py:59
+msgid "transactions"
+msgstr "交易"
+
 #: polls/admin.py:16
 msgid "Date Information"
 msgstr "日期資訊"
+
+#: polls/apps.py:8
+msgid "polls"
+msgstr "投票"
 
 #: polls/models.py:9
 msgid "question_text"
